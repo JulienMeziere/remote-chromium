@@ -13,7 +13,7 @@ sleep 2
 
 # Start VNC and Chromium
 x11vnc -display :99 -nopw -forever -bg
-chromium --no-sandbox --disable-gpu --start-maximized > /dev/null 2>&1 &
+chromium --disable-gpu --start-maximized > /dev/null 2>&1 &
 
 # Start noVNC in foreground so systemd stays alive
 cd "$SCRIPT_DIR/noVNC"
